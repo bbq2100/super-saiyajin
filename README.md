@@ -3,12 +3,11 @@ Serverless Search Engine
 
 ![saizajin](https://i.imgur.com/efKkZA7.png)
 
-How hard is it to deploy Elastic Cloud Kubernetes and use it from serverless functions? Well, it took me 1 hr, so it's rather easy :)
-Let's start with setting up [minikube](https://minikube.sigs.k8s.io/docs/start/).
+How hard is it to deploy Elastic Cloud Kubernetes on GKE and use it from Google Functions? Well, it took me 1 hr, so it's rather easy :)
 
 ## Prepare the environment:
 
-Check the [ECK documentation](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-deploy-kibana.html) out.
+Check the [GKE](https://cloud.google.com/kubernetes-engine/docs/quickstart) and [ECK](https://www.elastic.co/guide/en/cloud-on-k8s/current/k8s-deploy-kibana.html) documentation out.
 
 ```
 ./install_eck.sh
@@ -17,16 +16,6 @@ Check the [ECK documentation](https://www.elastic.co/guide/en/cloud-on-k8s/curre
 ```
 
 Use `monitor_operator_logs.sh` to monitor logs from the ES K8S operator.
-
-## GKE to the rescue!
-
-If you are anything like me, you see the following error in K8S:
-
-```
-pod has unbound immediate PersistentVolumeClaims
-```
-
-Well, GKE, here we go again!
 
 ## Deploy a function
 
