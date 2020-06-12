@@ -149,5 +149,5 @@ So let's test if our function can reach Elastic:
 
 ## Summary
 
-With just few lines of code we have a 3 node Elasticsearch cluster deployed in Kubernetes. We created a Google Function
-which calls Elasticsearch.
+With just few lines of code we have a 3 node Elasticsearch cluster deployed in Kubernetes and we created a Google Function
+which calls the Elasticsearch cluster.
